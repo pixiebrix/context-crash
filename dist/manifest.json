@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "author": "PixieBrix, Inc.",
+  "name": "Chrome Runtime Contexts Crash Repro",
+  "short_name": "PixieBrix",
+  "description": "",
+  "homepage_url": "https://www.pixiebrix.com",
+  "minimum_chrome_version": "116.0",
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; font-src 'self' https://fonts.gstatic.com; connect-src 'self' http: https:; object-src 'self'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline' https:; frame-src 'self' http: https:"
+  },
+  "permissions": [],
+  "action": {
+    "default_title": "Chrome User Gesture Error Repro"
+  },
+  "background": {
+    "service_worker": "serviceWorker.js",
+    "type": "module"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  }
+}

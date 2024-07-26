@@ -14,6 +14,7 @@
   "action": {
     "default_title": "Chrome User Gesture Error Repro"
   },
+  "devtools_page": "devtools.html",
   "background": {
     "service_worker": "serviceWorker.js",
     "type": "module"

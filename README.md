@@ -1,9 +1,8 @@
 `chrome.runtime.getContexts` crash
 ---
 
-WIP: does not currently crash, even when Dev Tools are open
-
-Things to try:
-
-- Add a content script
-- Double-check CSP
+Steps to reproduce:
+- Load the extension
+- Open the Options Page
+- Open the DevTools
+- Click the "Get Contexts in Extension Page" button
